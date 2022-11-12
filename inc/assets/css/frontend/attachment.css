@@ -1,0 +1,141 @@
+/* attachment */
+.justwpforms-attachment-box {
+  display: flex;
+  flex-grow: 1;
+  align-items: center;
+  width: auto;
+  height: auto !important;
+  padding: 10px;
+  border: 1px solid #dbdbdb;
+  border-radius: 6px;
+  border-top-right-radius: 0;
+  border-bottom-right-radius: 0;
+}
+.justwpforms-upload-area {
+  cursor: pointer;
+}
+.justwpforms-styles.justwpforms-form--part-border-radius-square .justwpforms-attachment-box {
+  border-radius: 0;
+}
+.justwpforms-styles.justwpforms-form--part-border-radius-pill .justwpforms-attachment-box {
+  border-radius: 25px;
+  border-top-right-radius: 0;
+  border-bottom-right-radius: 0;
+}
+.justwpforms-attachment-progress {
+  display: none;
+}
+.justwpforms-attachment-progress[data-type=default] {
+  display: block;
+  color: #888888;
+}
+.justwpforms-styles .justwpforms-attachment-progress[data-type=default] {
+  color: var(--justwpforms-color-part-placeholder);
+}
+.justwpforms-upload-area input[type=text]:focus + .justwpforms-attachment-box,
+.justwpforms-upload-area.focus .justwpforms-attachment-box {
+  outline: 0;
+  border-color: #7aa4ff;
+  border-color: var(--justwpforms-color-part-border-focus);
+  box-shadow: inset 0 0 0 1px #7aa4ff;
+  box-shadow: inset 0 0 0 1px var(--justwpforms-color-part-border-focus);
+}
+.justwpforms-upload-area.uploading .justwpforms-attachment-progress[data-type=default] {
+  display: none;
+}
+.justwpforms-upload-area.uploading .justwpforms-attachment-progress[data-type=uploading] {
+  display: block;
+}
+.justwpforms-styles .justwpforms-attachment-progress {
+  font-size: 16px;
+  font-size: var(--justwpforms-part-value-font-size);
+  overflow-wrap: anywhere;
+}
+.justwpforms-styles .justwpforms-part--attachment .justwpforms-input-group__suffix {
+  font-size: 16px;
+  font-size: var(--justwpforms-part-value-font-size);
+}
+.justwpforms-part--attachment .justwpforms-input-group__suffix {
+  -moz-user-select: none;
+  -webkit-user-select: none;
+  user-select: none;
+}
+.justwpforms-form--part-border-radius-square .justwpforms-attachment-box {
+  border-radius: 0;
+}
+.justwpforms-form--part-border-radius-pill .justwpforms-attachment-box {
+  border-radius: 25px;
+}
+.justwpforms-styles .justwpforms-attachment-box {
+  border-color: #dbdbdb;
+  border-color: var(--justwpforms-color-part-border);
+  background-color: #fff;
+  background-color: var(--justwpforms-color-part-background);
+}
+ul.justwpforms-attachment__list {
+  list-style: none !important;
+  margin: 0 !important;
+  padding: 0 !important;
+}
+ul.justwpforms-attachment__list.has-items {
+  margin-bottom: 10px !important;
+}
+ul.justwpforms-attachment__list li.justwpforms-attachment-item {
+  display: flex;
+  margin: 0 0 5px !important;
+}
+.justwpforms-styles ul.justwpforms-attachment__list li.justwpforms-attachment-item {
+  font-size: 16px;
+  font-size: var(--justwpforms-part-value-font-size);
+  color: #000;
+  color: var(--justwpforms-color-part-title);
+}
+ul.justwpforms-attachment__list li.justwpforms-attachment-item:first-child {
+  margin-top: 10px !important;
+}
+ul.justwpforms-attachment__list li.justwpforms-attachment-item[data-attachment-id=""] {
+  display: none;
+}
+.justwpforms-attachment-item__col--main {
+  flex: 1;
+}
+.justwpforms-attachment-item__size {
+  text-transform: uppercase;
+}
+.justwpforms-styles .justwpforms-attachment-item__size {
+  color: #454545;
+  color: var(--justwpforms-color-part-description);
+}
+.justwpforms-attachment-item__size:before {
+  content: '-';
+  display: inline-block;
+  margin-right: 5px;
+}
+.justwpforms-attachment-item__size span {
+  padding: 0 5px;
+}
+.justwpforms-attachment-box.uploading .justwpforms-attachment-box__progress {
+  display: block;
+}
+.justwpforms-attachment__counter {
+  margin: 5px 0 0;
+}
+.justwpforms-styles .justwpforms-attachment__counter {
+  font-size: 14px;
+  font-size: var(--justwpforms-part-description-font-size);
+  color: #454545;
+  color: var(--justwpforms-color-part-description);
+}
+.justwpforms-attachment__counter svg {
+  display: inline-block;
+  width: 18px;
+  height: 18px;
+  margin-right: 5px;
+  vertical-align: top;
+}
+.justwpforms-part--attachment .justwpforms-file-notices > * {
+  display: none;
+}
+.justwpforms-part--attachment .counter-label-1 {
+  text-transform: lowercase;
+}

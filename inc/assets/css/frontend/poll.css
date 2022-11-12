@@ -1,0 +1,103 @@
+:root {
+  /* colors */
+  --justwpforms-poll-bar-color: #e8e8e8;
+  --justwpforms-poll-link-color: #000000;
+  --justwpforms-poll-winner-color: #000000;
+}
+
+.justwpforms-poll-row {
+  margin-bottom: 15px;
+}
+.justwpforms-styles .justwpforms-poll-row {
+  font-size: 16px;
+  font-size: var(--justwpforms-part-value-font-size);
+}
+.justwpforms-form--part-border-radius-square .justwpforms-poll-row {
+  border-radius: 0;
+}
+.justwpforms-form--part-border-radius-pill .justwpforms-poll-row {
+  border-radius: 25px;
+}
+.justwpforms-poll-row__header {
+  display: flex;
+  flex-flow: row wrap;
+  font-size: 16px;
+  font-size: var(--justwpforms-part-value-font-size);
+  color: #000;
+  color: var(--justwpforms-part-value-font-size);
+}
+.justwpforms-poll-row__label {
+  flex: 0 1 70%;
+}
+.justwpforms-poll-row__votes {
+  flex: 1;
+}
+.justwpforms-poll-row__track {
+  width: 100%;
+  margin: 0 0 5px;
+}
+.justwpforms-poll-row__bar {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: flex-end;
+  align-items: center;
+  height: 40px;
+  border-radius: 6px;
+  background-color: #e8e8e8;
+}
+.justwpforms-poll-row__bar--winner {
+  background-color: #000;
+}
+.justwpforms-styles .justwpforms-poll-row__bar {
+  background-color: var(--justwpforms-poll-bar-color);
+}
+.justwpforms-styles .justwpforms-poll-row__bar--winner {
+  background-color: var(--justwpforms-poll-winner-color);
+}
+.justwpforms-poll-results {
+  display: none;
+}
+.justwpforms-part--poll.show-results .justwpforms-poll-results {
+  display: block;
+  width: 100%;
+}
+.justwpforms-part--poll.show-results .justwpforms-poll-voting {
+  display: none;
+}
+.justwpforms-poll-voting {
+  width: 100%;
+}
+.justwpforms-poll__links {
+  display: flex;
+  flex-flow: row wrap;
+  align-items: center;
+  margin-top: 10px;
+}
+.justwpforms-styles .justwpforms-poll__links button {
+  display: inline-flex;
+  align-items: center;
+  justify-self: flex-end;
+  font-weight: normal;
+  font-size: 16px;
+  font-size: var(--justwpforms-part-value-font-size);
+  border: 0;
+  box-shadow: none;
+}
+.justwpforms-poll__links svg {
+  display: inline-block;
+  width: 18px;
+  margin-right: 5px;
+  fill: currentColor;
+}
+.justwpforms-poll__total-votes {
+  display: flex;
+  flex-flow: row wrap;
+  align-items: center;
+  min-width: 30px;
+  margin-right: 10px;
+}
+.justwpforms-styles .justwpforms-poll__total-votes {
+  line-height: 1;
+  font-size: 16px;
+  font-size: var(--justwpforms-part-value-font-size);
+}

@@ -1,0 +1,44 @@
+.justwpforms-part--rank_order .justwpforms-part-option label.option-label {
+	display: inline-block;
+	overflow-wrap: anywhere;
+}
+.justwpforms-part--rank_order .justwpforms-part-option .justwpforms-custom-select {
+	display: inline-block;
+	min-width: 110px;
+	max-width: 110px;
+}
+
+.justwpforms-part--rank_order .justwpforms-part-option .justwpforms-custom-select .justwpforms-part__select-wrap {
+	height: auto;
+}
+
+.justwpforms-part--rank_order ul.justwpforms-custom-select-dropdown li.rank-choice-disable {
+	color: #a7a6a6d6 !important;
+	cursor: not-allowed;
+}
+.justwpforms-dropdown-item.justwpforms-custom-select-dropdown__item.justwpforms-rank-clear-button {
+	border-top: 1px solid #e0e0e0;
+}
+
+.justwpforms-rank-clear-button.hide-clear-button {
+	display: none !important;
+}
+
+
+.justwpforms-part.justwpforms-part--rank_order .justwpforms-part-option .option-label {
+	cursor: default;
+	margin-bottom: 0px;
+	padding-bottom: 0px;
+}
+
+.justwpforms-part.justwpforms-part--rank_order .justwpforms-part-option {
+	margin-bottom: 20px;
+	display: flex;
+	align-items: center;
+} 
+
+.justwpforms-part.justwpforms-part--rank_order.justwpforms-part--label-below .justwpforms-part-option {
+    align-items: center;
+    flex-flow: row-reverse;
+    align-self: flex-start;
+}

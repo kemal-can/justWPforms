@@ -1,0 +1,22 @@
+/**
+ *
+ * Deprecated form builder mute style css
+ *
+ */
+.justwpforms-style-view.muted-styles .justwpforms-color-control,
+.justwpforms-style-view.muted-styles #customize-control-form_title_font_size,
+.justwpforms-style-view.muted-styles [id^='customize-control-part_border_'],
+.justwpforms-style-view.muted-styles #customize-control-labels-text,
+.justwpforms-style-view.muted-styles #customize-control-dropdowns,
+.justwpforms-style-view.muted-styles #customize-control-checkboxes-radios,
+.justwpforms-style-view.muted-styles #customize-control-rating,
+.justwpforms-style-view.muted-styles #customize-control-submit,
+.justwpforms-style-view.muted-styles [id^='customize-heading-colors_'],
+.justwpforms-style-view.muted-styles #customize-control-part_border,
+.justwpforms-style-view.muted-styles #customize-control-tables {
+ display: none;
+}
+
+.justwpforms-style-view.muted-styles [id^='customize-control-color_attachment_'] {
+ display: block;
+}

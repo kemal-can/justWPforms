@@ -1,0 +1,258 @@
+.justwpforms-payments__payment-method-choice {
+  margin-bottom: 0;
+}
+.justwpforms-styles .justwpforms-form__part.justwpforms-payments__price {
+  padding-top: 0;
+  padding-bottom: 0;
+}
+.justwpforms-styles .justwpforms-form__part.justwpforms-payments__price .justwpforms-part__el {
+  display: flex;
+  gap: 5px;
+}
+.justwpforms-styles .justwpforms-payments__price .label {
+  font-size: 16px;
+  font-size: var(--justwpforms-part-title-font-size);
+}
+.justwpforms-form--part-inner-padding-narrow .justwpforms-payments__price .label {
+  margin-bottom: 5px;
+}
+.justwpforms-part--payments .justwpforms-part {
+  padding-left: 0;
+  padding-right: 0;
+  margin-bottom: 0;
+}
+.justwpforms-part--payments .justwpforms-part[data-subpart=payment_method] {
+  margin-bottom: 0;
+}
+.justwpforms-payments__price .price,
+.justwpforms-payments__price .discounted-price.coupons {
+  display: block;
+  font-weight: bold;
+  font-size: 16px;
+  font-size: var(--justwpforms-part-value-font-size);
+}
+.justwpforms-payments-service--stripe {
+  margin-top: 5px;
+  flex-flow: row wrap;
+  justify-content: space-between;
+}
+.justwpforms-form--part-outer-padding-narrow .justwpforms-payments-service--stripe {
+  margin-bottom: 0;
+}
+.justwpforms-payments-service .justwpforms-part-wrap p {
+  margin-bottom: 0;
+  font-size: 14px;
+  font-size: var(--justwpforms-part-description-font-size);
+}
+.justwpforms-form--part-value-text-align-right .justwpforms-payments-service .justwpforms-part-wrap p {
+  text-align: right;
+}
+.justwpforms-form--part-value-text-align-center .justwpforms-payments-service .justwpforms-part-wrap p{
+    text-align: center;
+}
+.justwpforms-part--payments .justwpforms-part-error-notice {
+  margin-top: 5px;
+}
+.justwpforms-part-error-notice__realtime {
+  display: none;
+}
+.justwpforms-payments-service {
+  display: none;
+}
+.justwpforms-payments-service.show {
+  display: block;
+}
+.justwpforms-payments-service--stripe.show {
+  display: flex;
+}
+.justwpforms-part--payments .stripe-element {
+  border-width: 1px;
+  border-style: solid;
+  border-color: #000;
+}
+
+.justwpforms-part--payments .justwpforms-payments__stripe-el .justwpforms-part__el {
+  display: flex;
+  gap: 10px;
+  flex-wrap: wrap;
+}
+
+.justwpforms-part--payments .justwpforms-payments__stripe-el label.justwpforms-stripe-card-label {
+  width: 100%;
+}
+
+@media only screen and (max-width: 400px) {
+  .justwpforms-part--payments .justwpforms-payments__stripe-el .justwpforms-part__el > div {
+    width: 100%;
+  }
+}
+
+.justwpforms-styles .justwpforms-part--payments .stripe-element {
+  padding: 13px 10px;
+  border-radius: 6px !important;
+  border-color: var(--justwpforms-color-part-border) !important;
+  background-color: #fff !important;
+  background-color: var(--justwpforms-color-part-background) !important;
+  transition-property: none;
+  transition-duration: 0.1s;
+  transition-duration: var(--justwpforms-transition-duration);
+  transition-timing-function: ease-in;
+}
+.justwpforms-styles .justwpforms-part--payments .stripe-element + .justwpforms-message-notices {
+  margin-top: 5px;
+}
+.justwpforms-styles .justwpforms-part--payments .stripe-element.StripeElement--focus {
+  border-color: #407fff !important;
+  border-color: var(--justwpforms-color-part-border-focus) !important;
+  color: #000;
+  color: var(--justwpforms-color-part-value);
+  background-color: #fff !important;
+  background-color: var(--justwpforms-color-part-background-focus) !important;
+  box-shadow: inset 0 0 0 1px #407fff;
+  box-shadow: inset 0 0 0 1px var(--justwpforms-color-part-border-focus);
+}
+.justwpforms-styles.justwpforms-form--part-borders-bottom-only .justwpforms-part--payments .stripe-element {
+  border-top-color: transparent !important;
+  border-left-color: transparent !important;
+  border-right-color: transparent !important;
+  box-shadow: none !important;
+}
+.justwpforms-styles.justwpforms-form--part-border-radius-square .justwpforms-part--payments .stripe-element {
+  border-radius: 0 !important;
+}
+.justwpforms-styles.justwpforms-form--part-border-radius-pill .justwpforms-part--payments .stripe-element {
+  border-radius: 25px !important;
+}
+.justwpforms-form--part-inner-padding-narrow .justwpforms-part--payments .stripe-element {
+  padding: 5px;
+}
+.justwpforms-form--part-inner-padding-wide .justwpforms-part--payments .stripe-element {
+  padding: 15px;
+}
+
+.justwpforms-part--payments span.justwpforms-stripe-expiry-hint,
+.justwpforms-part--payments span.justwpforms-stripe-cvc-hint {
+  margin-bottom: 10px;
+}
+
+.justwpforms-payments__card {
+  width: 102%;
+  margin-bottom: 0;
+}
+
+.justwpforms-payments__card.justwpforms-payments__stripe-el label {
+  display: block;
+}
+
+.stripe-element.stripe-card,
+.stripe-element.stripe-card-expiry,
+.stripe-element.stripe-card-cvc {
+  width: auto;
+  min-width: 1em;
+  display: inline-grid;
+  align-items: stretch;
+}
+
+.stripe-element.stripe-card > div,
+.stripe-element.stripe-card-expiry > div,
+.stripe-element.stripe-card-cvc > div {
+  grid-area: 2/1;
+  position: relative;
+}
+
+.stripe-element.stripe-card:after,
+.stripe-element.stripe-card-expiry:after,
+.stripe-element.stripe-card-cvc:after {
+  content: attr(data-value) " ";
+  visibility: hidden;
+  font-size: var( --justwpforms-part-value-font-size );
+  grid-area: 2/1;
+  line-height: 1.15;
+}
+
+
+.justwpforms-payments__card .stripe-element:not(:last-child) {
+  margin-bottom: 15px;
+}
+
+.justwpforms-form--part-outer-padding-narrow .justwpforms-payments__card .stripe-element:not(:last-child) {
+  margin-bottom: 5px;
+}
+
+.justwpforms-form--part-outer-padding-wide .justwpforms-payments__card .stripe-element:not(:last-child) {
+  margin-bottom: 35px;
+}
+
+.justwpforms-part--payments .justwpforms-part__description {
+  margin: 0;
+}
+.justwpforms-styles .justwpforms-part--payments input:checked+.checkmark .justwpforms-radio-circle {
+  display: block;
+}
+
+.justwpforms-form--part-inner-padding-narrow .justwpforms-payments__coupon .justwpforms-input .justwpforms-button {
+  padding-top: 5px;
+  padding-bottom: 5px;
+}
+
+.justwpforms-payments__coupon .justwpforms-input {
+  display: flex;
+  gap: 5px;
+}
+
+.justwpforms-payments__coupon .justwpforms-input > * {
+  flex-basis: auto;
+}
+
+.justwpforms-payments__coupon .justwpforms-input > #justwpforms_coupon_apply {
+  flex-shrink: 0;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
+.justwpforms-styles.justwpforms-form--part-inner-padding-narrow .justwpforms-payments__coupon #justwpforms_coupon_apply {
+  padding-top: 5px;
+  padding-bottom: 5px;
+}
+
+.justwpforms-payments__coupon .justwpforms-coupon-notice {
+  display: none;
+}
+.justwpforms-payments__coupon .justwpforms-coupon-notice {
+  margin: 10px 0 0;
+  font-size: 16px;
+  font-size: var(--justwpforms-part-value-font-size);
+  color: #f23000;
+  color: var(--justwpforms-color-error);
+  -moz-user-select: none;
+  -webkit-user-select: none;
+  user-select: none;
+  -webkit-tap-highlight-color: transparent;
+  line-height: 1.2;
+}
+
+.justwpforms-payments__price .price.strikethrough {
+  text-decoration: line-through;
+}
+
+.justwpforms-styles .justwpforms-payments-service--paypal p {
+  font-size: 16px;
+  font-size: var(--justwpforms-part-value-font-size);
+  overflow-wrap: anywhere;
+  color: #000;
+  color: var(--justwpforms-color-part-value);
+}
+
+.justwpforms-coupon-notice.error span svg {
+  content: '';
+  display: inline-block;
+  width: 17px;
+  height: 17px;
+  margin: 0 8px 0 0;
+  color: #f23000;
+  color: var(--justwpforms-color-error);
+}
+
+.justwpforms-styles.justwpforms-form--part-border-off .justwpforms-part.justwpforms-payments__card .stripe-element {
+  border-color: transparent !important;
+}

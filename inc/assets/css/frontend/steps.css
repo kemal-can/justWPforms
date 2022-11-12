@@ -1,0 +1,170 @@
+:root {
+  --justwpforms-color-multistep-info-text-color: #FFFFFF;
+  --justwpforms-color-multistep-info-back-color: #000000;
+  --justwpforms-color-multistep-info-back-color-hover: #000000;
+}
+
+.justwpforms-form-progress {
+  position: relative;
+  width: auto;
+  margin: 0;
+  padding: 0px 1%;
+}
+
+.justwpforms-step {
+  display: flex;
+  flex-flow: row wrap;
+}
+
+.justwpforms-step-preview,
+.justwpforms-step {
+  width: 100%;
+  margin-bottom: 20px;
+}
+
+.justwpforms-step-preview {
+  position: relative;
+  padding: 0 1%;
+}
+
+.justwpforms-step-preview a.submit {
+  position: absolute;
+  top: 10px;
+  right: 20px;
+}
+
+.justwpforms-form--multistep .justwpforms-part--submit {
+  padding-top: 0;
+}
+
+.justwpforms-part.justwpforms-part--page_break {
+  flex: 0 0 100%;
+  margin: 0;
+  padding: 0 1%;
+}
+
+/* New Multistep CSS */
+.justwpforms-page-break:before {
+  content: "";
+  position: absolute;
+  top: 57%;
+  left: 0;
+  right: 0;
+  border-top: 3px dashed #ccc;
+}
+
+.justwpforms-page-break span.label:empty:before {
+  content: "Add page break";
+  opacity: .5;
+}
+
+.justwpforms-page-break .justwpforms-part__label {
+  position: relative;
+  font-size: 13px;
+  text-transform: uppercase;
+  font-weight: 600;
+  border: none;
+  box-shadow: none;
+  white-space: nowrap;
+  text-align: center;
+  margin: 0;
+  padding: 6px 20px;
+  max-width: 100%;
+  width: 100%!important;
+  background: transparent!important;
+}
+
+.justwpforms-page-break .justwpforms-part__label {
+  text-align: center !important;
+  width: 100% !important;
+}
+
+.justwpforms-page-break .justwpforms-part__label span.label {
+  border-radius: 4px;
+  background: #fff;
+  font-size: 13px;
+  font-weight: 600 !important;
+  padding: 6px 8px;
+  height: 24px;
+  color: #000;
+  color: var(--justwpforms-color-part-description);
+}
+
+.justwpforms-page-break .justwpforms-required,
+.justwpforms-page-break .justwpforms-optional {
+  display: none !important;
+}
+
+button.submit.justwpforms-submit.justwpforms-button--submit.justwpforms-back-step,
+button.submit.justwpforms-submit.justwpforms-button--submit.justwpforms-continue-step {
+    background: none;
+    padding: 0;
+    font-size: var(--justwpforms-part-value-font-size);
+    color: #000;
+    color: var(--justwpforms-color-part-description);
+    border: 0px solid transparent !important;
+    width: auto !important;
+    border-width: 0px !important;
+    font-weight: normal !important;
+    text-decoration: underline;
+    display: block;
+}
+
+button.submit.justwpforms-submit.justwpforms-button--submit.justwpforms-previous-step:hover {
+  color: var(--justwpforms-color-multistep-previous-text);
+  border-bottom: 1px solid #000;
+}
+
+.justwpforms-form-progress__step-title {
+    margin-bottom: 5px;
+}
+
+.justwpforms-form-progress {
+  margin-bottom: 20px;
+}
+
+.justwpforms-flex.justwpforms-step_information_wrapper {
+    padding: 0;
+    margin: 0;
+}
+
+.justwpforms-styles .justwpforms-flex.justwpforms-step_information_wrapper h2,
+.justwpforms-styles .justwpforms-flex.justwpforms-step_information_wrapper span {
+  font-size: var(--justwpforms-part-value-font-size);
+  color: #000;
+  color: var(--justwpforms-color-multistep-info-text-color);
+  margin-bottom: 0;
+}
+
+.justwpforms-styles .justwpforms-flex.justwpforms-step_information_wrapper button.submit.justwpforms-submit.justwpforms-button--submit.justwpforms-back-step {
+  color: #000;
+  color: var(--justwpforms-color-multistep-info-back-color);
+  margin-top: 2px;
+}
+
+.justwpforms-styles .justwpforms-flex.justwpforms-step_information_wrapper button.submit.justwpforms-submit.justwpforms-button--submit.justwpforms-back-step:hover {
+  color: #000;
+  color: var(--justwpforms-color-multistep-info-back-color-hover);
+}
+
+.justwpforms-styles .justwpforms-message-notice.justwpforms-step-wrapper-notice {
+  width: 100%;
+  display: flex;
+}
+
+.justwpforms-styles .justwpforms-message-notice.justwpforms-step-wrapper-notice button.submit.justwpforms-submit.justwpforms-button--submit.justwpforms-back-step {
+  text-align: left;
+  display: inline-block;
+  white-space: nowrap;
+  margin-right:10px;
+}
+
+.justwpforms-styles .justwpforms-message-notice.justwpforms-step-wrapper-notice span.justwpforms-form-progress__step-index.justwpforms-form-progress__step-title {
+  text-align: right;
+  display: inline-block;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  margin-top:3px;
+  flex-grow: 1;
+}

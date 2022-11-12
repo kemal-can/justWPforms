@@ -1,0 +1,64 @@
+/**
+ *
+ * Common styles
+ *
+ */
+.justwpforms-modal {
+  width: 312px;
+}
+
+.justwpforms-modal picture > img {
+  display: block;
+  max-width: 100%;
+  -o-object-fit: cover;
+  object-fit: cover;
+}
+
+.justwpforms-modal p:last-child {
+  margin-bottom: 0;
+}
+
+.justwpforms-modal .components-radio-control__option:not(:last-child) {
+  margin-bottom: 13px;
+}
+
+.justwpforms-modal__footer {
+  margin-top: 24px;
+}
+
+.justwpforms-modal__footer-button-group {
+  display: flex;
+}
+
+.justwpforms-modal__footer-button-group .components-button {
+  flex: 1 0 auto;
+  justify-content: center;
+}
+
+.justwpforms-modal__footer-button-group .components-button + .components-button {
+  margin-left: 10px;
+}
+
+.components-modal__frame.components-guide.justwpforms-modal {
+  height: auto;
+  max-height: 90vh;
+}
+
+
+/**
+ *
+ * Deactivation modal
+ *
+ */
+.justwpforms-modal.justwpforms-modal--deactivate label {
+  display: block;
+  margin: 0 0 3px;
+}
+
+.justwpforms-modal.justwpforms-modal--deactivate label:not(:last-child) {
+  margin: 0 0 5px;
+}
+
+.justwpforms-modal.justwpforms-modal--deactivate .components-modal__content {
+  padding-bottom: 32px;
+}

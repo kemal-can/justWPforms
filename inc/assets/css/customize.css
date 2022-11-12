@@ -1,0 +1,867 @@
+/**
+ *
+ * General
+ *
+ */
+#customize-control-captcha {
+  display: none;
+}
+
+.has-recaptcha-integration #customize-control-captcha,
+.has-recaptchav3-integration #customize-control-captcha {
+  display: block;
+}
+
+#customize-control-active_email_service,
+#customize-control-alert_email_reply_to {
+  display: none;
+}
+
+#customize-control-receive_email_alerts.checked ~ #customize-control-owner_attach_pdf.checked ~ .justwpforms-nested-settings[data-trigger=owner_attach_pdf],
+#customize-control-send_confirmation_email.checked ~ #customize-control-attach_pdf.checked ~ .justwpforms-nested-settings[data-trigger=attach_pdf],
+.has-recaptcha-integration #customize-control-captcha.checked ~ .justwpforms-nested-settings[data-trigger=captcha],
+#customize-control-password_protect.checked ~ .justwpforms-nested-settings[data-trigger=password_protect],
+#customize-control-unique_id.checked ~ .justwpforms-nested-settings[data-trigger=unique_id],
+.justwpforms-email-view.abandoned-resume-response-expire #customize-control-abandoned_resume_send_alert_email.checked ~ .justwpforms-nested-settings[data-trigger=abandoned_resume_send_alert_email],
+#customize-control-preview_before_submit.checked ~ .justwpforms-nested-settings[data-trigger=preview_before_submit],
+#customize-control-schedule_visibility.checked ~ .justwpforms-nested-settings[data-trigger=schedule_visibility],
+#customize-control-block_emails.checked ~ .justwpforms-nested-settings[data-trigger=block_emails],
+#customize-control-block_language.checked ~ .justwpforms-nested-settings[data-trigger=block_language],
+.has-email #customize-control-restrict_user_entries.checked ~ .justwpforms-nested-settings[data-trigger=restrict_user_entries],
+.has-email #customize-control-active_email_service,
+.has-email #customize-control-active_email_service[data-value=active-campaign] ~ .justwpforms-nested-settings[data-trigger=active-campaign],
+.has-email #customize-control-active_email_service[data-value=aweber] ~ .justwpforms-nested-settings[data-trigger=aweber],
+.has-email #customize-control-active_email_service[data-value=constant-contact] ~ .justwpforms-nested-settings[data-trigger=constant-contact],
+.has-email #customize-control-active_email_service[data-value=convertkit] ~ .justwpforms-nested-settings[data-trigger=convertkit],
+.has-email #customize-control-active_email_service[data-value=mailchimp] ~ .justwpforms-nested-settings[data-trigger=mailchimp],
+.has-email #customize-control-active_email_service[data-value=mailerlite] ~ .justwpforms-nested-settings[data-trigger=mailerlite],
+.has-email #customize-control-active_email_service[data-value=mailpoet] ~ .justwpforms-nested-settings[data-trigger=mailpoet],
+.has-email #customize-control-active_email_service[data-value=sendfox] ~ .justwpforms-nested-settings[data-trigger=sendfox],
+.has-email #customize-control-active_email_service[data-value=sendgrid] ~ .justwpforms-nested-settings[data-trigger=sendgrid],
+.has-email #customize-control-active_email_service[data-value=sendinblue] ~ .justwpforms-nested-settings[data-trigger=sendinblue],
+.has-email #customize-control-active_email_service[data-value=emailoctopus] ~ .justwpforms-nested-settings[data-trigger=emailoctopus],
+.has-email #customize-control-sendinblue_subscribe_status[data-value=""] ~ #customize-control-sendinblue_double_opt_in.checked ~ .justwpforms-nested-settings[data-trigger=sendinblue_double_opt_in],
+.has-email #customize-control-alert_email_reply_to,
+#customize-control-submission_redirect_notice,
+#customize-control-redirect_now_link {
+  display: block;
+}
+
+#customize-control-mailerlite_subscribe_status ~ div.customize-control,
+#customize-control-sendfox_subscribe_status ~ div.customize-control,
+#customize-control-mailpoet_subscribe_status ~ div.customize-control,
+#customize-control-convertkit_subscribe_status ~ div.customize-control,
+#customize-control-constant_contact_subscribe_status ~ div.customize-control,
+#customize-control-aweber_subscribe_status ~ div.customize-control,
+#customize-control-active_campaign_subscribe_status ~ div.customize-control,
+#customize-control-mailchimp_subscribe_status ~ div.customize-control,
+#customize-control-sendgrid_subscribe_status ~ div.customize-control,
+#customize-control-sendinblue_subscribe_status ~ div.customize-control,
+#customize-control-sendinblue_list,
+#customize-control-sendinblue_list_unsubscribe,
+#customize-control-emailoctopus_subscribe_status ~ div.customize-control {
+  display: none;
+}
+
+#customize-control-sendinblue_subscribe_status[data-value=""] ~ #customize-control-sendinblue_list,
+#customize-control-sendinblue_subscribe_status[data-value=""] ~ #customize-control-sendinblue_double_opt_in,
+#customize-control-sendinblue_subscribe_status[data-value="unsubscribe"] ~ #customize-control-sendinblue_list_unsubscribe,
+#customize-control-mailerlite_subscribe_status[data-value=""] ~ #customize-control-mailerlite_group,
+#customize-control-mailerlite_subscribe_status[data-value="unsubscribe"] ~ #customize-control-mailerlite_group_unsubscribe,
+#customize-control-sendfox_subscribe_status[data-value=""] ~ #customize-control-sendfox_list,
+#customize-control-sendfox_subscribe_status[data-value="unsubscribe"] ~ #customize-control-sendfox_list_unsubscribe,
+#customize-control-mailpoet_subscribe_status[data-value=""] ~ #customize-control-mailpoet_list,
+#customize-control-mailpoet_subscribe_status[data-value=""] ~ #customize-control-mailpoet_send_confirmation_email,
+#customize-control-mailpoet_subscribe_status[data-value="unsubscribe"] ~ #customize-control-mailpoet_list_unsubscribe,
+#customize-control-convertkit_subscribe_status[data-value=""] ~ #customize-control-convertkit_form,
+#customize-control-convertkit_subscribe_status[data-value=""] ~ #customize-control-convertkit_tags,
+#customize-control-convertkit_subscribe_status[data-value="unsubscribe"] ~ #customize-control-convertkit_tags_unsubscribe,
+#customize-control-constant_contact_subscribe_status[data-value=""] ~ #customize-control-constant_contact_list,
+#customize-control-constant_contact_subscribe_status[data-value="unsubscribe"] ~ #customize-control-constant_contact_list_unsubscribe,
+#customize-control-aweber_subscribe_status[data-value=""] ~ #customize-control-aweber_list,
+#customize-control-aweber_subscribe_status[data-value=""] ~ #customize-control-aweber_tags,
+#customize-control-aweber_subscribe_status[data-value="unsubscribe"] ~ #customize-control-aweber_list_unsubscribe,
+#customize-control-aweber_subscribe_status[data-value="unsubscribe"] ~ #customize-control-aweber_tags_unsubscribe,
+#customize-control-active_campaign_subscribe_status[data-value=""] ~ #customize-control-active_campaign_list,
+#customize-control-active_campaign_subscribe_status[data-value=""] ~ #customize-control-active_campaign_tags,
+#customize-control-active_campaign_subscribe_status[data-value="unsubscribe"] ~ #customize-control-active_campaign_list_unsubscribe,
+#customize-control-active_campaign_subscribe_status[data-value="unsubscribe"] ~ #customize-control-active_campaign_tags_unsubscribe,
+#customize-control-mailchimp_subscribe_status[data-value=""] ~ #customize-control-mailchimp_list,
+#customize-control-mailchimp_subscribe_status[data-value=""] ~ #customize-control-mailchimp_groups,
+#customize-control-mailchimp_subscribe_status[data-value=""] ~ #customize-control-mailchimp_tags,
+#customize-control-mailchimp_subscribe_status[data-value=""] ~ #customize-control-mailchimp_double_opt_in,
+#customize-control-mailchimp_subscribe_status[data-value="unsubscribe"] ~ #customize-control-mailchimp_list_unsubscribe,
+#customize-control-mailchimp_subscribe_status[data-value="unsubscribe"] ~ #customize-control-mailchimp_groups_unsubscribe,
+#customize-control-mailchimp_subscribe_status[data-value="unsubscribe"] ~ #customize-control-mailchimp_tags_unsubscribe,
+#customize-control-sendgrid_subscribe_status[data-value=""] ~ #customize-control-sendgrid_list,
+#customize-control-sendgrid_subscribe_status[data-value="unsubscribe"] ~ #customize-control-sendgrid_list_unsubscribe,
+#customize-control-emailoctopus_subscribe_status[data-value=""] ~ #customize-control-emailoctopus_list,
+#customize-control-emailoctopus_subscribe_status[data-value="unsubscribe"] ~ #customize-control-emailoctopus_list_unsubscribe,
+#customize-control-emailoctopus_subscribe_status[data-value=""] ~ #customize-control-emailoctopus_tags,
+#customize-control-emailoctopus_subscribe_status[data-value="unsubscribe"] ~ #customize-control-emailoctopus_tags_unsubscribe {
+  display: block;
+}
+
+.has-0-parts #customize-control-shuffle_parts,
+.has-1-parts #customize-control-shuffle_parts {
+  display: none;
+}
+
+ .justwpforms-nested-settings[data-trigger=unique_id] {
+   margin-bottom: 12px;
+ }
+
+ .justwpforms-nested-settings[data-trigger=unique_id]:after {
+   content: '';
+   display: table;
+   clear: both;
+ }
+
+ .justwpforms-nested-settings {
+   padding-bottom: 5px;
+ }
+
+ .justwpforms-nested-settings > p:last-child {
+   margin-bottom: 0;
+ }
+
+.justwpforms-setup-view .customize-control[id*='customize-control-pdf_']:not(#customize-control-pdf_footer_message),
+.justwpforms-setup-view .customize-control[id*='customize-control-abandoned_response_']:not(#customize-control-abandoned_response_expire),
+.justwpforms-setup-view .customize-control#customize-control-abandoned_resume_save_button,
+.justwpforms-setup-view .customize-control#customize-control-abandoned_resume_response_expire,
+.justwpforms-email-view .customize-control#customize-control-abandoned_resume_send_alert_email.checked,
+.justwpforms-setup-view .customize-control[id*='customize-control-abandoned_resume_email_']:not(#customize-control-abandoned_resume_email_content),
+.justwpforms-setup-view .customize-control[id*='customize-control-unique_id_start_from'],
+.justwpforms-setup-view .customize-control[id*='customize-control-max_entries']:not(#customize-control-max_entries_per_user),
+.justwpforms-setup-view .customize-control[id*='customize-control-password']:not(#customize-control-password_protect):not(#customize-control-password_submit_button_label),
+.justwpforms-setup-view #customize-control-scheduled_message,
+.justwpforms-setup-view .customize-control[id*='mailchimp_']:not(#customize-control-mailchimp_tags) {
+  padding-bottom: 5px;
+  border-bottom: 0;
+}
+
+.justwpforms-part-item-limit-submission-settings {
+  margin-top: 5px;
+}
+
+/**
+ *
+ * Date part
+ *
+ */
+ul.justwpforms-parts-list li[data-part-type="date"] .justwpforms-parts-list-item-title:before {
+  background-image: url(../../../core/assets/svg/icons/date-time.svg);
+}
+
+/**
+ *
+ * Title part
+ *
+ */
+ul.justwpforms-parts-list li[data-part-type="title"] .justwpforms-parts-list-item-title:before {
+  background-image: url(../../../core/assets/svg/icons/title.svg);
+}
+
+ul.justwpforms-parts-list li[data-part-type="title"] {
+  display: none;
+}
+
+.has-title ul.justwpforms-parts-list li[data-part-type="title"] {
+  display: block;
+}
+
+/**
+ *
+ * Legal part
+ *
+ */
+ul.justwpforms-parts-list li[data-part-type="legal"] .justwpforms-parts-list-item-title:before {
+  background-image: url(../../../core/assets/svg/icons/consent-choice.svg);
+}
+
+/**
+ *
+ * Signature part
+ *
+ */
+ul.justwpforms-parts-list li[data-part-type="signature"] .justwpforms-parts-list-item-title:before {
+  background-image: url(../../../core/assets/svg/icons/signature.svg);
+}
+
+/**
+ *
+ * Scrollable terms part
+ *
+ */
+ul.justwpforms-parts-list li[data-part-type="scrollable_terms"] .justwpforms-parts-list-item-title:before {
+  background-image: url(../../../core/assets/svg/icons/scrollable-terms.svg);
+}
+
+/**
+ *
+ * Placeholder part
+ *
+ */
+ul.justwpforms-parts-list li[data-part-type="placeholder"] .justwpforms-parts-list-item-title:before {
+  background-image: url(../../../core/assets/svg/icons/paragraph.svg);
+}
+
+.justwpforms-part-widget[data-part-type="placeholder"] .wp-switch-editor,
+.justwpforms-part-widget[data-part-type="toggletip"] .wp-switch-editor,
+.justwpforms-part-widget[data-part-type="scrollable_terms"] .wp-switch-editor {
+  display: none;
+}
+
+/**
+ *
+ * Rating part
+ *
+ */
+ul.justwpforms-parts-list li[data-part-type="rating"] .justwpforms-parts-list-item-title:before {
+  background-image: url(../../../core/assets/svg/icons/rate.svg);
+}
+
+/**
+ *
+ * Scale part
+ *
+ */
+ul.justwpforms-parts-list li[data-part-type="scale"] .justwpforms-parts-list-item-title:before {
+  background-image: url(../../../core/assets/svg/icons/slider.svg);
+}
+
+/**
+ *
+ * Rank Order part
+ *
+ */
+ul.justwpforms-parts-list li[data-part-type="rank_order"] .justwpforms-parts-list-item-title:before {
+  background-image: url(../../../core/assets/svg/icons/rank.svg);
+}
+
+/**
+ *
+ * Phone part
+ *
+ */
+ul.justwpforms-parts-list li[data-part-type="phone"] .justwpforms-parts-list-item-title:before {
+  background-image: url(../../../core/assets/svg/icons/phone.svg);
+}
+
+/**
+ *
+ * Table part
+ *
+ */
+ul.justwpforms-parts-list li[data-part-type="table"] .justwpforms-parts-list-item-title:before {
+  background-image: url(../../../core/assets/svg/icons/matrix.svg);
+}
+
+/**
+ *
+ * Narrative part
+ *
+ */
+ul.justwpforms-parts-list li[data-part-type="narrative"] .justwpforms-parts-list-item-title:before {
+  background-image: url(../../../core/assets/svg/icons/story.svg);
+}
+
+/**
+ *
+ * Rich text part
+ *
+ */
+ul.justwpforms-parts-list li[data-part-type="rich_text"] {
+  display: none;
+}
+
+/**
+ *
+ * Consent choice part
+ *
+ */
+ul.justwpforms-parts-list li[data-part-type="legal"] {
+  display: none;
+}
+
+/**
+ *
+ * Scale part
+ *
+ */
+ul.justwpforms-parts-list li[data-part-type="likert_scale"] {
+  display: none;
+}
+
+/**
+ *
+ * Attachment part
+ *
+ */
+ul.justwpforms-parts-list li[data-part-type="attachment"] .justwpforms-parts-list-item-title:before {
+  background-image: url(../../../core/assets/svg/icons/file-upload.svg);
+}
+
+/**
+ *
+ * Email integration part
+ *
+ */
+ ul.justwpforms-parts-list li[data-part-type="email_integration"] .justwpforms-parts-list-item-title:before {
+  background-image: url(../../../core/assets/svg/icons/opt-in-choice.svg);
+}
+
+.has-email_integration-part ul.justwpforms-parts-list li[data-part-type="email_integration"] {
+  cursor: default;
+  opacity: 0.6;
+}
+
+/**
+ *
+ * Payment part
+ *
+ */
+ ul.justwpforms-parts-list li[data-part-type="payments"] {
+   display: none;
+ }
+
+ .has-stripe-integration ul.justwpforms-parts-list li[data-part-type="payments"],
+ .has-paypal-integration ul.justwpforms-parts-list li[data-part-type="payments"] {
+   display: block;
+ }
+
+ .has-payments-part ul.justwpforms-parts-list li[data-part-type="payments"] {
+   cursor: default;
+   opacity: 0.6;
+ }
+
+ ul.justwpforms-parts-list li[data-part-type="payments"] .justwpforms-parts-list-item-title:before {
+   background-image: url(../../../core/assets/svg/icons/payment.svg);
+ }
+
+/**
+ *
+ * Divider part
+ *
+ */
+ul.justwpforms-parts-list li[data-part-type="divider"] .justwpforms-parts-list-item-title:before {
+  background-image: url(../../../core/assets/svg/icons/separator.svg);
+}
+
+/**
+ *
+ * Layout Title part
+ *
+ */
+ul.justwpforms-parts-list li[data-part-type="layout_title"] .justwpforms-parts-list-item-title:before {
+  background-image: url(../../../core/assets/svg/icons/heading.svg);
+}
+
+/**
+ *
+ * Media part
+ *
+ */
+ul.justwpforms-parts-list li[data-part-type="media"] .justwpforms-parts-list-item-title:before {
+  background-image: url(../../../core/assets/svg/icons/media.svg);
+}
+
+#customize-controls span.justwpforms-file-extensions,
+#customize-controls .justwpforms-hide-file-extensions {
+  display: none;
+}
+
+#customize-control-attachment {
+  display: none;
+}
+
+ /**
+  *
+  * Modal forms
+  *
+  */
+ #customize-control-overlay {
+   display: none;
+ }
+
+ .justwpforms-style-view.has-overlay #customize-control-overlay {
+   display: block;
+ }
+
+ #customize-control-captcha_theme {
+   display: none;
+ }
+
+ .justwpforms-style-view.has-recaptcha #customize-control-captcha_theme {
+   display: block;
+ }
+
+ .justwpforms-datetime-controls-label {
+   overflow: hidden;
+   line-height: 24px;
+   margin-top: 7px;
+   margin-bottom: 4px;
+ }
+
+ .justwpforms-datetime-controls-label label {
+   float: left;
+   margin-bottom: 0;
+ }
+
+ .justwpforms-datetime-controls-label a {
+   float: right;
+ }
+
+ .justwpforms-datetime-controls-label a:focus,
+ .justwpforms-datetime-controls-label a:active {
+   box-shadow: none;
+ }
+
+ .justwpforms-datetime-controls {
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+ }
+
+ .justwpforms-datetime-component.date {
+   flex-basis: 42%;
+ }
+
+ .justwpforms-datetime-component.time,
+ .justwpforms-datetime-component.period {
+   flex-basis: 28%;
+ }
+
+ .justwpforms-reset-password {
+   display: inline-block;
+   font-size: 14px;
+ }
+
+ .justwpforms-reset-password:after {
+   content: "\f463";
+   position: relative;
+   top: 5px;
+   padding-left: 5px;
+   font-family: dashicons;
+   display: inline-block;
+   font-size: 18px;
+   color: #444;
+ }
+
+ .justwpforms-reset-password + .customize-password-field-wrap {
+   display: none;
+   margin-top: 10px;
+ }
+
+ /**
+  *
+  * Page Break part
+  *
+  */
+ ul.justwpforms-parts-list li[data-part-type="page_break"] .justwpforms-parts-list-item-title:before {
+   background-image: url(../../../core/assets/svg/icons/page-break.svg);
+ }
+
+ /**
+  *
+  * Multi step
+  *
+  */
+ .justwpforms-widget.no-sortable .justwpforms-part-widget-top {
+   cursor: default;
+ }
+
+ /**
+  *
+  * Progress Bar
+  *
+  */
+  #customize-control-progress_bar {
+   display: none;
+ }
+
+ .justwpforms-style-view.has-progress-bar #customize-control-progress_bar,
+ .justwpforms-style-view.has-progress-bar #customize-control-multistep {
+   display: block;
+ }
+
+ /**
+  *
+  * Goal link
+  *
+  */
+ #customize-control-goal_page {
+   display: none;
+ }
+
+ #customize-control-has_goal_page.checked ~ #customize-control-goal_page {
+   display: block;
+ }
+
+ /**
+  *
+  * Poll
+  *
+  */
+ .justwpforms-style-view #customize-control-poll {
+   display: none;
+ }
+
+ .justwpforms-style-view.has-poll #customize-control-poll {
+   display: block;
+ }
+
+ /**
+  *
+  * Uploader
+  *
+  */
+ img.justwpforms-upload-preview {
+   display: none;
+   width: auto;
+   height: auto;
+   max-width: 100%;
+   max-height: 120px;
+ }
+
+ .justwpforms-upload-preview {
+   display: none;
+ }
+
+ .justwpforms-upload-preview.show {
+   display: block;
+ }
+
+ .wp-core-ui .justwpforms-media-upload button.button-add-media,
+ .wp-core-ui .justwpforms-media-upload button.justwpforms-change-button {
+   display: none;
+ }
+
+ .wp-core-ui .justwpforms-media-upload button.button-add-media.show,
+ .wp-core-ui .justwpforms-media-upload button.justwpforms-change-button.show {
+   display: inline-block;
+ }
+
+ .justwpforms-customize-part-include_in_pdf {
+   display: none;
+ }
+
+ .justwpforms-stack-view.has-pdf .justwpforms-customize-part-include_in_pdf {
+   display: block;
+ }
+
+ #customize-control-pdf_custom_email_copy {
+   padding-bottom: 15px;
+   border-bottom: 1px solid #ccc;
+ }
+
+ /**
+  *
+  * Conditionals
+  *
+  */
+.justwpforms-setup-logic-wrap fieldset {
+  margin-bottom: 5px;
+  padding-bottom: 5px;
+}
+
+.justwpforms-setup-logic-wrap .no-parts {
+  margin-top: 5px;
+  margin-bottom: 0;
+  padding: 0;
+}
+
+a.justwpforms-form-part-logic,
+a.justwpforms-item-logic {
+  float: right;
+}
+
+a.justwpforms-form-part-logic:before,
+a.justwpforms-item-logic:before {
+  position: relative;
+  top: 2px;
+  display: inline-block;
+  content: "\f346";
+  font-family: dashicons;
+}
+
+a.justwpforms-form-part-logic.opened:before,
+a.justwpforms-item-logic.opened:before {
+  content: "\f342";
+}
+
+.justwpforms-part-settings-logic-view h3 {
+  display: none;
+}
+
+.justwpforms-part-logic-wrap select,
+.justwpforms-setup-logic-wrap select,
+.justwpforms-setup-logic-wrap input[type=text],
+.justwpforms-part-settings-logic-view select,
+.justwpforms-part-settings-logic-view input[type=text],
+.justwpforms-part-choice-logic-wrap select {
+  margin-bottom: 5px;
+}
+
+.justwpforms-part-logic-wrap button,
+.justwpforms-setup-logic-wrap button,
+.justwpforms-part-settings-logic-view button,
+.justwpforms-part-choice-logic-wrap button {
+  width: 100%;
+  margin-top: 10px !important;
+  margin-bottom: 10px !important;
+}
+
+.justwpforms-setup-view .justwpforms-setup-logic-wrap button,
+.justwpforms-email-view .justwpforms-setup-logic-wrap button,
+.justwpforms-messages-view .justwpforms-setup-logic-wrap button,
+.justwpforms-widget[data-part-type="payments"] .justwpforms-part-settings-logic-view button {
+  width: auto;
+  float: right;
+}
+
+.justwpforms-widget[data-part-type="payments"] .justwpforms-part-settings-logic-view {
+  float: left;
+  width: 100%;
+  margin-top: -8px;
+}
+
+.justwpforms-widget[data-part-type="payments"] .justwpforms-part-settings-logic-view button {
+  margin-top: 5px !important;
+  margin-bottom: 9px !important;
+}
+
+.justwpforms-widget[data-part-type="payments"] p.description {
+  margin-bottom: 15px;
+}
+
+.justwpforms-setup-view .justwpforms-setup-logic-wrap button:after,
+.justwpforms-email-view .justwpforms-setup-logic-wrap button:after {
+  content: '';
+  display: table;
+  clear: both;
+}
+
+.justwpforms-setup-logic-wrap button {
+  margin-top: 5px !important;
+}
+
+.justwpforms-conditional__delete {
+  margin-top: 0;
+  text-align: center;
+}
+
+a.justwpforms-conditional__delete {
+  color: #d63638;
+}
+
+a.justwpforms-conditional__delete:hover {
+  color: #d63638;
+}
+
+.justwpforms-setup-logic-wrap p {
+  margin: 0 0 5px;
+}
+
+.justwpforms-conditional__select-trigger {
+  -webkit-appearance: menulist;
+  -moz-appearance: menulist;
+  appearance: menulist;
+  background-color: #fff;
+  color: #000;
+}
+
+.justwpforms-conditional__row {
+  position: relative;
+}
+
+.justwpforms-conditional__group {
+  margin-bottom: 10px;
+  padding: 10px;
+  border: 1px solid #eee;
+  background-color: #fdfdfd;
+}
+
+.justwpforms-setup-view .justwpforms-conditional__group,
+.justwpforms-email-view .justwpforms-conditional__group,
+.justwpforms-messages-view .justwpforms-conditional__group {
+  background-color: #fdfdfd;
+  border: 1px solid #ccc;
+}
+
+.justwpforms-conditional__group:last-of-type {
+  margin-bottom: 0;
+}
+
+.justwpforms-conditional__tools {
+  float: right;
+}
+
+button.justwpforms-conditional__add {
+  margin-bottom: 5px !important;
+}
+
+.justwpforms-conditional__select-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 10;
+}
+
+.justwpforms-part-widget .mce-tinymce {
+  border: 0 !important;
+}
+
+.justwpforms-part-widget .wp-editor-container {
+  border-color: #e5e5e5;
+}
+
+.justwpforms-media__confirmation_email_content .attachment-details .edit-attachment,
+.justwpforms-media__confirmation_email_content .attachment-details [data-setting=title],
+.justwpforms-media__confirmation_email_content .attachment-details [data-setting=caption],
+.justwpforms-media__confirmation_email_content .attachment-details [data-setting=description],
+.justwpforms-media-edit-minimal .embed-media-settings fieldset.setting-group,
+.justwpforms-media-edit-minimal .embed-media-settings .setting.extra-classes,
+.justwpforms-media-edit-minimal .embed-media-settings .setting.link-class-name,
+.justwpforms-media-edit-minimal .embed-media-settings .setting.link-rel,
+.justwpforms-media-edit-minimal .embed-media-settings .setting.link-target,
+.justwpforms-media-edit-minimal .embed-media-settings .setting.caption {
+  display: none;
+}
+
+.justwpforms-editor-media-minimal .mce-inline-toolbar-grp .mce-btn-group .mce-btn:nth-child(1),
+.justwpforms-editor-media-minimal .mce-inline-toolbar-grp .mce-btn-group .mce-btn:nth-child(2),
+.justwpforms-editor-media-minimal .mce-inline-toolbar-grp .mce-btn-group .mce-btn:nth-child(3),
+.justwpforms-editor-media-minimal .mce-inline-toolbar-grp .mce-btn-group .mce-btn:nth-child(4) {
+  display: none;
+}
+
+#customize-control-abandoned_resume_email_content .wp-editor-tabs {
+  visibility: hidden;
+}
+
+
+.justwpforms-media__abandoned_resume_email_content .attachment-details .edit-attachment,
+.justwpforms-media__abandoned_resume_email_content .attachment-details [data-setting=title],
+.justwpforms-media__abandoned_resume_email_content .attachment-details [data-setting=caption],
+.justwpforms-media__abandoned_resume_email_content .attachment-details [data-setting=description] {
+  display: none;
+}
+
+.justwpforms-payments-control {
+  display: none;
+}
+
+.has-payments-part .justwpforms-payments-control {
+  display: block;
+}
+
+#customize-control-restrict_user_entries,
+#customize-control-no_results_label {
+  display: none;
+}
+
+.has-email #customize-control-restrict_user_entries,
+.has-email-part #customize-control-restrict_user_entries {
+  display: block;
+}
+
+.justwpforms-widget[data-part-type="media"] .justwpforms-media-upload label {
+  display: inline-block;
+  margin-bottom: 3px;
+}
+
+.justwpforms-widget[data-part-type="media"] label:after {
+  content: ':';
+}
+
+.justwpforms-widget[data-part-type="media"] .justwpforms-media-upload {
+  margin-bottom: 1em;
+}
+
+.justwpforms-widget[data-part-type="media"] .justwpforms-upload-actions button {
+  width: 100%;
+}
+
+.is-scheduled #customize-control-scheduled_message,
+.has-show-voting #customize-control-show_results_label,
+.has-show-voting #customize-control-back_to_poll_label,
+.is-restrict-users #customize-control-max_entries_per_user_message,
+.has-search-not-found #customize-control-no_results_label,
+.has-limit-answer #customize-control-max_answer_message {
+  display: block;
+}
+
+/**
+ *
+ * Blanks field part
+ *
+ */
+ul.justwpforms-parts-list li[data-part-type="narrative"] {
+ display: none;
+}
+
+
+#customize-control-validate_with_disallowed_keys.customize-control-checkbox.checked ~ #customize-control-block_emails.customize-control-checkbox,
+#customize-control-validate_with_disallowed_keys.customize-control-checkbox.checked ~ #customize-control-block_language.customize-control-checkbox,
+#customize-control-validate_with_disallowed_keys.customize-control-checkbox.checked ~ [data-trigger=block_emails].customize-control-group.justwpforms-nested-settings,
+#customize-control-validate_with_disallowed_keys.customize-control-checkbox.checked ~ [data-trigger=block_language].customize-control-group.justwpforms-nested-settings {
+  display:  none !important;
+}
+
+.justwpforms-widget[data-part-type="page_break"].last-of-type .justwpforms-goto_next_page {
+  display: none;
+}
+
+.justwpforms-part-widget .justwpforms-file-types-wrap {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: flex-start;
+}
+
+.justwpforms-part-widget .justwpforms-file-types-wrap label[for]::after {
+  content: "";
+  flex: auto;
+}
+
+.justwpforms-part-widget .justwpforms-file-types-wrap label.justwpforms-file-type-checkbox-label {
+  flex: 0 1 25%;
+  padding: 5px 5px 5px 0px;
+  box-sizing: border-box;
+}
+
+ul.justwpforms-parts-list li[data-part-type="table"],
+ul.justwpforms-parts-list li[data-part-type="address"] {
+  display: none;
+ }
+
+@media only screen and (min-width: 885px) and (max-width: 1080px) {
+  .justwpforms-part-widget .justwpforms-file-types-wrap label.justwpforms-file-type-checkbox-label {
+    flex: 0 1 33.3333%;
+  }
+}
+
+@media only screen and (min-width: 601px) and (max-width: 885px) {
+  .justwpforms-part-widget .justwpforms-file-types-wrap label.justwpforms-file-type-checkbox-label {
+    flex: 0 1 50%;
+  }
+}
+.justwpforms-stack-view .customize-control [data-part-type="toggletip"] div.label-group input[data-bind='label'] {
+  width: 100%;
+}
+
+ ul.justwpforms-parts-list li[data-part-type="toggletip"] .justwpforms-parts-list-item-title:before {
+   background-image: url(../../../core/assets/svg/icons/toggletip.svg);
+ }
+
+/* Deprecated message fields */
+#customize-control-scheduled_message,
+#customize-control-max_entries_per_user_message,
+#customize-control-show_results_label,
+#customize-control-back_to_poll_label,
+#customize-control-restrict_user_entries,
+#customize-control-no_results_label {
+  display: none;
+}

@@ -1,0 +1,4 @@
+.justwpforms-button--submit,
+[data-justwpforms-type="attachment"] {
+	pointer-events: none;
+}

@@ -1,0 +1,17 @@
+.justwpforms-form--scheduled .justwpforms-form__title {
+  padding: 0;
+}
+
+.justwpforms-form--scheduled .justwpforms-flex {
+  flex-flow: column wrap;
+  padding: 25px 0;
+  margin: 0;
+}
+
+.justwpforms-form--scheduled .justwpforms-flex p:last-child {
+  margin-bottom: 0;
+}
+
+.justwpforms-form--scheduled hr {
+  width: 100%;
+}

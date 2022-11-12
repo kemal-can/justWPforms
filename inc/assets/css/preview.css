@@ -1,0 +1,45 @@
+/**
+ *
+ * Multi step
+ *
+ */
+.justwpforms-part--page_break hr {
+  display: block;
+  width: 100%;
+  height: 1px;
+  border-top: 2px dashed #dbdbdb;
+  border-color: var(--justwpforms-color-part-border);
+  background: transparent;
+}
+
+/**
+ *
+ * reCAPTCHA
+ *
+ */
+.grecaptcha-badge {
+  display: none !important;
+}
+
+.justwpforms-save-session {
+  display: none !important;
+}
+
+[data-justwpforms-resumable] .justwpforms-save-session {
+  display: inline-block !important;
+}
+
+.justwpforms--signature-area--container,
+.justwpforms--signature-area--container .justwpforms-button {
+  cursor: auto !important;
+}
+
+.justwpforms-part--layout_title h1.justwpforms-layout-title:empty:before,
+.justwpforms-part--layout_title h2.justwpforms-layout-title:empty:before,
+.justwpforms-part--layout_title h3.justwpforms-layout-title:empty:before,
+.justwpforms-part--layout_title h4.justwpforms-layout-title:empty:before,
+.justwpforms-part--layout_title h5.justwpforms-layout-title:empty:before,
+.justwpforms-part--layout_title h6.justwpforms-layout-title:empty:before {
+  content: "Heading";
+  opacity: .5;
+}

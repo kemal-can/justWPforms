@@ -1,0 +1,83 @@
+/**
+ *
+ * Signature field
+ *
+ */
+.justwpforms--signature-area--container,
+.justwpforms-styles .justwpforms-part .justwpforms--signature-area--container {
+  position: relative;
+  padding: 10px;
+  border: 1px solid #dbdbdb;
+  border-radius: 6px;
+}
+
+.justwpforms--signature-area {
+  width: 100%;
+  height: 250px;
+  margin-bottom: 10px;
+}
+
+.justwpforms--signature-area--container svg {
+  width: 100%;
+  height: 100%;
+}
+
+.justwpforms--signature-area--container.drawing svg {
+  touch-action: none;
+}
+
+.justwpforms--signature-area--start-drawing {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.justwpforms--signature-area--toolbar {
+  display: flex;
+  justify-content: space-between;
+}
+
+.justwpforms--signature-area--toolbar .justwpforms-button {
+  visibility: hidden;
+}
+
+.justwpforms--signature-area--toolbar .justwpforms--signature-area--clear-drawing,
+.justwpforms--signature-area--toolbar .justwpforms--signature-area--done-drawing {
+  flex: 0 1 49.5%;
+}
+
+.justwpforms--signature-area--toolbar .justwpforms--signature-area--edit-drawing {
+  flex: 0 2 100%;
+  display: none;
+}
+
+.justwpforms--signature-area--container.drawing .justwpforms--signature-area--start-drawing,
+.justwpforms--signature-area--container.drawn .justwpforms--signature-area--start-drawing {
+  display: none;
+}
+
+.justwpforms--signature-area--container.drawing .justwpforms--signature-area--clear-drawing,
+.justwpforms--signature-area--container.drawing .justwpforms--signature-area--done-drawing {
+  visibility: visible;
+}
+
+.justwpforms--signature-area--container.drawn .justwpforms--signature-area--clear-drawing,
+.justwpforms--signature-area--container.drawn .justwpforms--signature-area--done-drawing {
+  display: none;
+}
+
+.justwpforms--signature-area--container.drawn .justwpforms--signature-area--edit-drawing {
+  visibility: visible;
+  display: block;
+}
+
+.justwpforms-part__el-preview__signature {
+  width: 100%;
+  height: 250px;
+}
+
+.justwpforms-part__el-preview__signature svg {
+  width: 100%;
+  height: 100%;
+}

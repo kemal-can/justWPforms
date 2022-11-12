@@ -1,0 +1,111 @@
+body:not(.mce-content-body) {
+  background-color: #fff !important;
+  padding: 40px !important;
+}
+
+body::before, body::after {
+  content: '' !important;
+  display: none !important;
+}
+
+.justwpforms-form {
+  width: 100%;
+}
+
+.justwpforms-block-editable {
+  position: relative;
+}
+
+.customize-partial-edit-shortcut.justwpforms-partial-edit-shortcut {
+  display: block !important;
+  position: absolute;
+  top: 0;
+}
+
+.notice {
+  margin-bottom: 15px;
+}
+
+.notice-success {
+  padding: 1px 12px;
+  border-left: 4px solid #46b450;
+  box-shadow: 0 1px 1px 0 rgba( 0, 0, 0, 0.1 );
+  background: #fff;
+}
+
+.notice p {
+  margin: 10px 0;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", sans-serif;
+  font-size: 13px;
+  color: #444;
+}
+
+.notice a {
+  color: #0073aa;
+  text-decoration: underline;
+  transition: color 0.05s ease-in-out;
+  cursor: auto;
+}
+
+.notice a:hover {
+  color: #00a0d2;
+}
+
+.justwpforms-preview-badge {
+  padding-left: 10px;
+  font-weight: 400;
+  font-size: 16px;
+}
+
+.justwpforms-part.unloading, .justwpforms-block-editable--partial.unloading {
+  opacity: 0.25;
+  cursor: progress !important;
+  -webkit-transition: opacity 0.5s;
+  transition: opacity 0.5s;
+}
+
+.justwpforms-part.highlighted {
+  outline: 1px solid lightblue;
+}
+
+a.justwpforms-ask-link,
+a.justwpforms-ask-link.customize-unpreviewable {
+  cursor: pointer !important;
+}
+
+.justwpforms-form__part.justwpforms-part--recaptcha {
+  display: none;
+}
+
+.justwpforms-part--width-auto + .justwpforms-part--recaptcha {
+  display: none !important;
+}
+
+.preview-hidden {
+  display: none !important;
+}
+
+a.disabled {
+  pointer-events: none;
+  cursor: not-allowed;
+}
+
+.justwpforms-form--hide-title > div > .justwpforms-form__title {
+  display: none;
+}
+
+.justwpforms-part__label span.label:empty:before,
+.justwpforms-table__row  span.justwpforms-table__row-label:empty:before,
+.justwpforms-table__cell--column-title  span:empty:before,
+.option-label span.label:empty:before,
+span.justwpforms-form-progress__step-title:empty:before,
+.justwpforms-custom-select-dropdown .justwpforms-dropdown-item:empty:before  {
+  content: "Add label";
+  opacity: .5;
+}
+
+
+h3.justwpforms-form__title:empty:before {
+  content: "Add title";
+  opacity: .5;
+}

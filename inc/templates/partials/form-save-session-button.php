@@ -1,0 +1,1 @@
+<button type="button" class="justwpforms-text-button justwpforms-save-session<?php if ( justwpforms_is_preview_context() ): ?> disabled<?php endif; ?>" data-justwpforms-form-id="<?php echo $form['ID']; ?>"><?php echo justwpforms_get_form_property( $form, 'abandoned_resume_save_button_label' ); ?></button>
